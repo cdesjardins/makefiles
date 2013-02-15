@@ -1,9 +1,10 @@
 SUBDIRS = exe shared static
 .PHONY: $(SUBDIRS)
 
-include dist/deps
 
 all: dist/deps $(SUBDIRS)
+
+include dist/deps
 
 $(SUBDIRS):
 	@$(MAKE) -C $@
