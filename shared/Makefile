@@ -1,8 +1,9 @@
-OUTEXE          = $(ODIR)/rtest
+OUTLIB          = libshared.so
 INCLUDEDIRS     =
 LIBDIRS         =
 LIBS            =
 ARCHIVES        =
-CROSS_COMPILE   = arm-linux-gnueabi-
+CROSS_COMPILE   = 
+GENFLAGS	+= -fPIC
 include ../Makefile.inc
 -include $(DEPS)
