@@ -48,7 +48,7 @@ NICEBLDOUTPUT=@echo "  Building $@"
 NICECLNOUTPUT=@echo "  Cleaning $(ODIR)"
 endif
 
-all: $(DEPS) $(OUTEXE) $(OUTPUT)
+all: $(DEPS) $(OUTPUT)
 
 projectdeps:
 	$(NICEDEPOUTPUT)
